@@ -1,0 +1,19 @@
+{
+    // This file is used to configure the three buttons along Codio's top menu.
+    
+    // Run button configuration
+    "commands": {
+        "Compile Test": "make clean && make test",
+        "Compile MyTest": "make clean && make mytest",
+        "Compile Decipher": "make clean && make"
+    },
+    // Preview button configuration
+    "preview": {
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+        "Box URL": "http://{{domain3000}}/",
+        "Box URL SSL": "https://{{domain3000}}/"
+    },
+    // Debugger target button configuration
+    "debugger": [{"type":"GDB","command":"/tmp/program83b0717fa37e2e0346bafc8c1429cb87 ","before":"g++ -g {{filepath}} -o /tmp/program83b0717fa37e2e0346bafc8c1429cb87","single":true,"lang":"cpp","additionalCompilerFlags":"","sourcePath":"{{filepath}}","args":"","uuid":"63f293ba-8385-602d-bcbe-7b86f94c9c58","name":"Debug Current File"}]
+}
